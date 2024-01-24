@@ -89,9 +89,24 @@
     background-color: #101010;
 
 }
-.hero,.about{
+.about-wrapper{
+    margin: 0;
+    padding: 0;
+}
+.hero{
     width: 1500px;
     padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.about{
+    width: 1500px;
+    height: 500px;
+    padding: 10px 50px;
+    margin: 0%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,7 +129,7 @@
     font-weight: 30;
     color: #28df99;
     letter-spacing: 6px;
-    font-size: 10px;
+    font-size: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
 
@@ -169,25 +184,21 @@
 #heroimg{
     width: 440px;
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.8));
+    display: block;
+    height: auto;
 }
 
-svg{
-    height: 600px;
-    position: absolute;
-    top: -145%;
-    left: 19%;
-    transform: rotate(179deg);
-    z-index: -1;
-    filter: drop-shadow(0px 0px 0px #99f3bd5f);
+#circle{
+    position: relative;
+    bottom: 0;
+    transform: translateZ(-50%);
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 50%;
+    clip-path: circle(50% at 50% 50%);
+    border: 3px solid #9af0cf;
 }
-
-.svg2{
-    height: 700px;
-    top: 7%;
-    left: 0%;
-    animation: blobanim1;
-}
-
 button{
     height: 40px;
     width: 135px;
@@ -222,10 +233,6 @@ button:hover{
 }
 .social i:hover{
     box-shadow: 0px 0px 10px #99f3bd;
-}
-
-.about .content{
-    width: 40px;
 }
 
 .section_heading{
@@ -386,40 +393,6 @@ button:hover{
 }
 .technical_skills .skils .REACT .line::after{
     width: 32%;
-}
-.professional_skills{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-}
-.professional_skills h3{
-    margin-top: 60px;
-    font-size: 26px;
-    color: #fff;
-    margin-bottom: 40px;
-}
-.professional_skills .boxes{
-    display: grid;
-    grid-auto-columns: repeat(2,1fr);
-    gap: 40px;
-    color: #fff;
-    margin-bottom: 40px;
-}
-.professional_skills .boxes .box{
-    display: flex;
-    height: 200px;
-    width: 200px;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-    border-radius: 50%;
-    border: 10px solid #28df99;
-    text-align: center;
-}
-.professional_skills .boxes .box .span{
-    gap: 30px;
 }
 .project{
     background-color: #0f0d0d;
@@ -586,4 +559,32 @@ textarea{
 .footer p{
     text-align: center;
     color: rgba(225, 225, 225, 0.4);
+}
+
+/* Scroll To Top Button */
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.3),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+                inset 4px 4px 6px 0 rgba(97, 96, 96, 0.2);
+    cursor: pointer;
+}
+
+#myBtn:hover{
+    opacity: 1;
+    background-color: #91f0c0;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    50%{
+        transform: translateY(3px);
+    }
 }

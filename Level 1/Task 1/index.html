@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Anshul Kansal</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="home">
         <div class="header">
             <div class="logo">
                 <a href="#">Anshul <span>Kansal</span></a>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <i class="fa fa-bars"></i>
         </div>
@@ -31,12 +33,10 @@
                     <h4>Welcome</h4>
                     <h1>Hello <span id="anshul">👋</span> I am <span>Anshul Kansal</span></h1>
                     <h2>And I am a <span>FrontEnd Developer</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod veritatis repudiandae delectus
-                        facere voluptas explicabo .</p>
                     <div style="display: flex; gap: 20px; align-items: end;">
                         <button>Download CV</button>
                         <div class="social">
-                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-github"></i>
                             <i class="fa-brands fa-instagram"></i>
                             <i class="fa-brands fa-linkedin-in"></i>
                             <i class="fa-brands fa-x-twitter"></i>
@@ -45,37 +45,34 @@
                 </div>
 
                 <div class="image-wrapper">
-                    <img src="/assets/hero-img.png" alt="" id="heroimg">
-                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#F2F4F8"
-                            d="M50.9,-64.6C65.7,-59.4, 77.1,-44.1,79.9,-27.8C82.7,-11.5,77,5.8,68.1, 18.7C59.31.6,47.3,40.1,35.4,50.4C23.5,60.6,11.8,72.6,-2.7,76.3C-17.1,80,-34.3,75.4,-42.7,64C-51.2,52.7,-51,34.6,-54.7,18.8C-58,.3,3.1,-65.8,-10.4,-64.1,-22.5C-62.5,-34.7,-51.7,-45.5,-39.5,-51.6C-27.3,-57.6,-13.7,-58.8,2.2,-61.8C18.1,-64.9,36.2,-69.8,50.9,-64.6Z"
-                            transform="translate (100 100)" />
-                    </svg>
+                    <div id="circle">
+                        <img src="./assets/hero-img.png" alt="" id="heroimg">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="wrapper about-wrapper">
-            <div class="about">
+            <div class="about" id="about">
                 <div class="image-wrapper">
-                    <svg class="svg2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#F2F4F8"
-                            d="M48.1,-61.7C48.1,40.3,48.2,-32.5,54.4,16.9C68.5,-1.2,72.8,13.2,78.8,24.2C68.3,35.1,526,42.6,38.4,52.5C24.3,62.4,11.8,72.6,-2.7,76.3C-17.1,80,-34.3,75.4,-42.7,64C-51.2,52.7,-51,34.6,-54.7,18.8C-58,.3,3.1,-65.8,-10.4,-64.1,-22.5C-62.5,-34.7,-51.7,-45.5,-39.5,-51.6C-27.3,-57.6,-13.7,-58.8,2.2,-61.8C18.1,-64.9,36.2,-69.8,50.9,-64.6Z"
-                            transform="translate(100 108)" />
-                    </svg>
-                    <img src="/assets/hero-img.png" alt="" id="heroimg">
+                    <div id="circle">
+                        <img src="./assets/hero-img.png" alt="" id="heroimg">
+                    </div>
                 </div>
                 <div class="content">
                     <h4>Let Me Introduce My Self</h4>
                     <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem tempora et
-                        recusandae voluptate alias facilis quia velit aperiam facere beatae nesciunt tenetur
-                        blanditiis dolorem earum iste autem, repellendus quae illum.</p>
+                    <p>I am a Computer Science undergraduate at Jaypee Institute of Information Technology, with an
+                        expected graduation in 2026. I am havinf a strong foundation in cloud computing and programming,
+                        holding certifications in SQL, Google Cloud, and AWS S3. My skill set includes AWS, Amazon S3,
+                        GCP, cloud computing, data structures, MySQL, C++, and C programming, positioning me well for a
+                        future in technology and software development.
+                    </p>
                     <button>Read More</button>
                 </div>
             </div>
         </div>
         <div class="wrapper">
-            <div class="services">
+            <div class="services" id="service">
                 <p class="section-title">
                     What Will I do For You
                 </p>
@@ -138,35 +135,13 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="professional_skills">
-                    <h3>Professional Skills</h3>
-                    <div class="boxes">
-                        <div class="box">
-                            <span>90%</span> <span>Team Work</span>
-                            <div class="ring"></div>
-                        </div>
-                        <div class="box">
-                            <span>70%</span> <span>Creativity</span>
-                            <div class="ring"></div>
-                        </div>
-                        <div class="box">
-                            <span>80%</span> <span>Project Manager</span>
-                            <div class="ring"></div>
-                        </div>
-                        <div class="box">
-                            <span>80%</span> <span>Communication</span>
-                            <div class="ring"></div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
 
     <div class="wrapper">
-        <div class="project">
+        <div class="project" id="project">
             <p class="section_title">What Will I do For You</p>
             <h3 class="section_heading">Latest Projects</h3>
             <div class="project_cards">
@@ -198,7 +173,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div>
             <div class="top-container">
                 <h1>Let's Discuss Your Projects</h1>
@@ -256,13 +231,27 @@
                 </div>
             </div>
         </div>
-
+        <button onclick="topFunction()" class="icon-arrow-up" id="myBtn" title="Scroll to Top"></button>
         <footer>
             <div class="footer">
                 <p>© 2024 Anshul Kansal. All rights reserved.</p>
             </div>
         </footer>
     </div>
+    <script>
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
