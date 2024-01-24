@@ -214,6 +214,11 @@ button{
 button:hover{
     box-shadow: 0 0 5px #28df99;
 }
+.social-cv{
+    display: flex; 
+    gap: 20px; 
+    align-items: end;
+}
 .social{
     display: flex;
     gap: 14px;
@@ -222,6 +227,16 @@ button:hover{
     /* justify-content: center; */
 }
 
+.social a{
+    color: black;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
 .social i{
     padding: 9px;
     background-color: #28df99;
@@ -569,9 +584,11 @@ textarea{
     height: 60px;
     width: 60px;
     display: none;
+    z-index: 5;
     place-items: center;
     border-radius: 50%;
-    transition: opacity 0.3s, background-color 0.3s;
+    background-color: #fff;
+    transition: opacity 0.3s, #fff 0.3s;
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.3),
                 inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
                 inset 4px 4px 6px 0 rgba(97, 96, 96, 0.2);
