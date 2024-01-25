@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Anshul Kansal</title>
+</head>
+
+<body>
+    <div class="container" id="home">
+        <div class="header">
+            <div class="logo">
+                <a href="#">Anshul <span>Kansal</span></a>
+            </div>
+            <ul>
+                <li><a href="#home" id="foot-text">Home</a></li>
+                <li><a href="#about" id="foot-text">About</a></li>
+                <li><a href="#service" id="foot-text">Services</a></li>
+                <li><a href="#project"id="foot-text">Projects</a></li>
+                <li><a href="#contact" id="foot-text">Contact</a></li>
+            </ul>
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="wrapper">
+            <div class="hero">
+                <div class="content">
+                    <h4>Welcome</h4>
+                    <h1>Hello <span id="anshul">👋</span> I am <span>Anshul Kansal</span></h1>
+                    <p>I Am into <span class="typing-text"></span></p>
+                    <div class="social-cv">
+                        <button id="downloadButton">Download CV</button>
+                        <div class="social">
+                            <a href="https://github.com/anshulkansal04" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://instagram.com/anshulkansal04" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/anshul-kansal-5740a2254/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/anshulkansal89" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-wrapper">
+                    <div id="circle">
+                        <img src="./assets/hero-img.png" alt="" id="heroimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper about-wrapper">
+            <div class="about" id="about">
+                <div class="image-wrapper">
+                    <div id="circle">
+                        <img src="./assets/hero-img.png" alt="" id="heroimg">
+                    </div>
+                </div>
+                <div class="content">
+                    <h4>Let Me Introduce My Self</h4>
+                    <h1>About Me</h1>
+                    <p>I am a Computer Science undergraduate at Jaypee Institute of Information Technology, with an
+                        expected graduation in 2026. I am havinf a strong foundation in cloud computing and programming,
+                        holding certifications in SQL, Google Cloud, and AWS S3. My skill set includes AWS, Amazon S3,
+                        GCP, cloud computing, data structures, MySQL, C++, and C programming, positioning me well for a
+                        future in technology and software development.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="services" id="service">
+                <p class="section-title">
+                    What Will I do For You
+                </p>
+                <h3 class="section_heading">My Services</h3>
+                <div class="service_cards">
+                    <div class="service_card">
+                        <div>
+                            <i class="fa-solid fab fa-html5"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>I provide Web Development services including building responsive websites</p>
+                        <!-- <button>Read More</button> -->
+                    </div>
+
+                    <div class="service_card">
+                        <div>
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python Development</h3>
+                        <p>I provide pyhthon Development services</p>
+                        <!-- <button>Read More</button> -->
+                    </div>
+
+                    <div class="service_card">
+                        <div>
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Computing</h3>
+                        <p>I provide Cloud Computing services </p>
+                        <!-- <button>Read More</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper skills-wrapper">
+            <div class="skills">
+                <p class="section_title">What Will I do For You</p>
+                <h3 class="section_heading">My Skills</h3>
+                <div class="skills_wrapper">
+                    <div class="technical_skills">
+                        <h3>Technical Skills</h3>
+                        <div class="skils">
+                            <div class="skil_name HTML">
+                                <h3>HTML5 <span>90%</span></h3>
+                                <div class="line"></div>
+                            </div>
+                            <div class="skil_name CSS3">
+                                <h3>CSS3 <span>80%</span></h3>
+                                <div class="line"></div>
+                            </div>
+                            <div class="skil_name Javascript">
+                                <h3>JavaScript <span>70%</span></h3>
+                                <div class="line"></div>
+                            </div>
+                            <div class="skil_name REACT">
+                                <h3>React <span>32%</span></h3>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="project" id="project">
+            <p class="section_title">What Will I do For You</p>
+            <h3 class="section_heading">Latest Projects</h3>
+            <div class="project_cards">
+                <div class="project_card">
+                    <img src="./assets/P1.png" alt="">
+                    <p id="p1" style="cursor: pointer;">View Code</p>
+                </div>
+                <div class="project_card">
+                    <img src="./assets/project.png" alt="">
+                    <p id="p2" style="cursor: pointer;">View Code</p>
+                </div>
+                <div class="project_card">
+                    <img src="./assets/P2.png" alt="">
+                    <p id="p3" style="cursor: pointer;">View Code</p>
+                </div>
+                <div class="project_card" id="p-final">
+                    <img src="./assets/P3.png" alt="">
+                    <p id="p4" style="cursor: pointer;">View Code</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer" id="contact">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Anshul's Portfolio</h3>
+                <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br> <br />Keep Rising 🚀!</p>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <p> <i class="fas fa-phone"></i>+91 99961-03246</p>
+                <p> <i class="fas fa-envelope"></i>anshulkansal89@gmail.com</p>
+                <p> <i class="fas fa-map-marked-alt"></i>Hisar, Haryana-125001</p>
+                <div class="share">
+
+                    <a href="https://linkedin.com/in/anshul-kansal-5740a2254/" class="fab fa-linkedin"
+                        aria-label="LinkedIn" target="_blank"></a>
+                    <a href="https://github.com/anshulkansal04" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                    <a href="mailto:anshulkansal89@gmail.com" class="fas fa-envelope" aria-label="Mail"
+                        target="_blank"></a>
+                    <a href="https://twitter.com/anshulkansal89" class="fab fa-twitter" aria-label="Twitter"
+                        target="_blank"></a>
+                    <a href="https://instagram.com/anshulkansal04" class="fab fa-instagram" aria-label="Telegram"
+                        target="_blank"></a>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="credit">ⓒ Copyrights 2024 by <a
+                href="https://linkedin.com/in/anshul-kansal-5740a2254/">Anshul.</a> All Rights Reserved</h1>
+
+    </section>
+
+ <button onclick="topFunction()" class="icon-arrow-up" id="myBtn" title="Scroll to Top"></button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
